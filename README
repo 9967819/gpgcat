@@ -1,13 +1,15 @@
-A secure cat is a gpg-enabled cat! ;)
+How to use:
 
-### Installation
+1 Copy gpgcat to $HOME/bin or /usr/local/bin or whereever. 
 
-1 Copy gpgcat.sh to $HOME/bin or /usr/local/bin or whereever. 
+	% sudo cp gpgcat /usr/local/bin/
 
-2 Export PRIVATE_KEYRING to some encrypted file somewhere.
+2 Define PRIVATE_KEYRING to fit your own needs :
+	
+	% export PRIVATE_KEYRING=/home/alice/passwords.gpg
 
-	% export PRIVATE_KEYRING=/home/alice/password_file.gpg
+Invocation: 
 
-### Invocation 
+% /usr/local/bin/gpgcat string
 
-	% gpgcat string
+Have fun! 
